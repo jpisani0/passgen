@@ -6,7 +6,9 @@
 
 # Help/manual printout
 def printHelp(errorMsg):
-    print(errorMsg+"\n")
+    if errorMsg != "":
+        print(errorMsg+"\n")
+
     print("passgen: a simple CLI password generator\n")
     print("OPTIONS:")
     print("  -l, --length")
@@ -37,7 +39,11 @@ def getOptions(options):
     if len(options) != 0:
         # Loop through the maximum amount of options
         while index < len(options):
-            if options[index] == "-l" or options[index] == "--length":
+            if options[index] == "-h" or options[index] == "--help":
+                printHelp("")
+                length = -1
+                break
+            elif options[index] == "-l" or options[index] == "--length":
                 # Check that the entered length is an integer
                 if options[index + 1].isdigit():
                     length = getLength(int(options[index + 1]))
