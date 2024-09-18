@@ -20,12 +20,12 @@ The manual can be accessed at anytime using the '-h' or '--help' option with pas
 
 passgen: a simple CLI password generator
 
-OPTIONS:
-  -l, --length
-     Used to specify the desired length of the password. Any positive integer from 1 to 512. Default is 20 characters.
-  -s, --symbols
-     Used to not include symbols in password. Symbols included by default.
-  -n, --numbers
+OPTIONS: \
+  -l, --length: 
+     Used to specify the desired length of the password. Any positive integer from 1 to 512. Default is 20 characters. \
+  -s, --symbols: 
+     Used to not include symbols in password. Symbols included by default. \
+  -n, --numbers: 
      Used to not include numbers in password. Numbers enabled by default.
 
 Example: passgen -l 25 -s --numbers --> generate a password that is 25 characters long and has no numbers or symbols
