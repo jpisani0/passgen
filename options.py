@@ -4,9 +4,9 @@
 #
 # DESCRIPTION: contains functions for checking options specified by the user when calling this program
 
-# Tuple for "safe" symbols to be used in password generation. These are symbols that SHOULD be accepted by most if they restrict certain symbols
+# Tuple for symbols to check if the user does not want symbols included in password
 symbolsList = ("!", "\"", "#", "$", "%", "^", "*", "(", ")", "-", "+", "_", "=", "[", "{", "]", "}", "\\", "|", "",
-               ",", "<", ".", ">", "`", "~", "/", "?", "@", "&")
+               ",", "<", ".", ">", "`", "~", "/", "?", "@", "&", "\'", ":", ";")
 
 
 # Check if a character is a symbol or not
