@@ -20,15 +20,11 @@ def printHelp(errorMsg):
 
 # Get the length of the password from user input
 def getLength(userInput):
-    # TODO: fix issue where program crashes when this input is not a number
-    try:
-        if int(userInput) < 1 or int(userInput) > 512:
-            printHelp("Invalid length, please choose an integer between 1 and 512\n")
-            return -1
-        else:
-            return int(userInput)
-    except:
-        printHelp("Length entered is not an integer")
+    if userInput < 1 or userInput > 512:
+        printHelp("Invalid length, please choose an integer between 1 and 512")
+        return -1
+    else:
+        return userInput
 
 
 # Get the options from user input
@@ -42,8 +38,14 @@ def getOptions(options):
         # Loop through the maximum amount of options
         while index < len(options):
             if options[index] == "-l" or options[index] == "--length":
-                length = getLength(options[index + 1])
-                index += 1
+                # Check that the entered length is an integer
+                if options[index + 1].isdigit():
+                    length = getLength(int(options[index + 1]))
+                    index += 1
+                else:
+                    printHelp("Invalid length")
+                    length = -1
+                    break
             elif options[index] == "-s" or options[index] == "--symbols":
                 symbols = False
             elif options[index] == "-n" or options[index] == "--numbers":
