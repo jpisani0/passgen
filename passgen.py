@@ -1,4 +1,4 @@
-# NAME: main.py
+# NAME: passgen.py
 # AUTHOR: J. Pisani
 # DATE: 9/4/24
 #
@@ -16,4 +16,3 @@ length, symbols, numbers = getOptions(sys.argv)
 if length != -1:
     print("passgen(): WARNING: your CLI has likely logged this password in plain text on your machine. Consider manually deleting it from the log for maximum security.")
     print(genPasswd(length, symbols, numbers))
-

@@ -16,12 +16,3 @@ def checkSymbol(character):
             return True
 
     return False
-
-
-# Check if a character is a number or not
-def checkNumber(character):
-    for num in range(0, 10):
-        if str(num) == character:
-            return True
-
-    return False

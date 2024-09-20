@@ -23,7 +23,7 @@ def genCharacter(symbols, numbers):
 
         # If numbers are disabled
         if not numbers:
-            if checkNumber(character):
+            if character.isdigit():
                 character = ""
 
     return character
