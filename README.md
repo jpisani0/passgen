@@ -7,13 +7,12 @@ CLI Random Password Generator
 Enter 'python3 passgen.py <options>' into your command line
 
 ## With Pyinstaller
-The executable dist/passgen was compiled on my machine (Arch Linux), so you will obviously have to compile it yourself if you are on another operating system. I also recommend doing this even if you are on the same operating system as me, as I may have made changes but neglected to update the binary file.
-
 1. Install Pyinstaller
    a. Install python and pip if you have not already
    b. Enter 'pip install pyinstaller' into your command line
 2. While in the repository directory, enter 'pyinstaller --onefile passgen.py'
 3. The binary file in dist/ will be overwritten and work on the machine you compiled it with
+4. Either from the dist/ directory or by moving dist/passgen to your PATH, run 'passgen <options>'
 
 ## Options
 The manual can be accessed at anytime using the '-h' or '--help' option with passgen.
