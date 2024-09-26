@@ -1,0 +1,5 @@
+# Pyinstaller build files
+build/
+dist/
+__pycache__/
+passgen.spec
