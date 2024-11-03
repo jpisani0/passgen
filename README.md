@@ -1,6 +1,6 @@
-# passgen
+# About passgen
 
-CLI Random Password Generator
+Passgen is a CLI random password generator. Its a simple yet fun project I wanted to make in a decently short amount of time. I am still new to python, so please, if there is anything you would have done differently or any reccomendations you want to give to improve this (although it is a simple project), please let me know!
 
 # Using Passgen
 ## With Python3
