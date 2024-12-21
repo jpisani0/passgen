@@ -1,15 +1,15 @@
-# passgen
+# About passgen
 
-CLI Random Password Generator
+Passgen is a CLI random password generator. Its a simple yet fun project I wanted to make in a decently short amount of time. I am still new to python, so please, if there is anything you would have done differently or any reccomendations you want to give to improve this (although it is a simple project), please let me know!
 
 # Using Passgen
 ## With Python3
 Enter 'python3 passgen.py <options>' into your command line
 
 ## With Pyinstaller
-1. Install Pyinstaller
-   a. Install python and pip if you have not already
-   b. Enter 'pip install pyinstaller' into your command line
+1. Install Pyinstaller \
+   a. Install python and pip if you have not already \
+   b. Enter 'pip install pyinstaller' into your command line 
 2. While in the repository directory, enter 'pyinstaller --onefile passgen.py'
 3. The binary file in dist/ will be overwritten and work on the machine you compiled it with
 4. Either from the dist/ directory or by moving dist/passgen to your PATH, run 'passgen <options>'
